@@ -20,7 +20,6 @@ void exibir_teatro(int teatro[FILEIRAS][CADEIRAS]) {
 }
 
 int main() {
-    /* Matriz 5x8 representando o teatro inicializada com alguns 0s e 1s */
     int teatro[FILEIRAS][CADEIRAS] = {
         {1, 1, 0, 0, 1, 0, 1, 1},
         {0, 1, 1, 0, 0, 0, 1, 0},
@@ -43,7 +42,6 @@ int main() {
     int col_inicio_reserva = -1;
 
     if (qtd > 0 && qtd <= CADEIRAS) {
-        /* Lacos aninhados para buscar a primeira fileira com assentos contiguos */
         for (int i = 0; i < FILEIRAS; i++) {
             int consecutivos = 0;
             int inicio_col = -1;

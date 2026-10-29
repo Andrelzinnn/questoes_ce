@@ -6,7 +6,6 @@ int main() {
     while (continuar == 's' || continuar == 'S') {
         int valor = 0;
 
-        /* a) Solicitar valor positivo com validacao */
         printf("\nInforme o valor para saque (inteiro positivo): R$ ");
         while (1) {
             if (scanf("%d", &valor) != 1) {

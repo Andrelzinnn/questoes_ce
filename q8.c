@@ -13,14 +13,12 @@ int main() {
         }
     }
 
-    /* Mostrar o vetor original */
     printf("\n--- Vetor Original ---\n[ ");
     for (int i = 0; i < 10; i++) {
         printf("%d ", v[i]);
     }
     printf("]\n");
 
-    /* Contar a frequencia de cada elemento sem duplicar contagens */
     int max_freq = 0;
     for (int i = 0; i < 10; i++) {
         if (ja_contado[i]) {
@@ -41,7 +39,6 @@ int main() {
         }
     }
 
-    /* Identificar e mostrar valores repetidos */
     printf("\n--- Valores Repetidos ---\n");
     int tem_repetidos = 0;
     for (int i = 0; i < 10; i++) {
@@ -55,7 +52,6 @@ int main() {
         printf("Nenhum valor apareceu mais de uma vez.\n");
     }
 
-    /* Informar o valor que mais se repetiu (e empates, se houver) */
     printf("\n--- Valor(es) com Maior Ocorrencia ---\n");
     if (max_freq > 1) {
         printf("Maior frequencia de repeticao: %d vezes\n", max_freq);

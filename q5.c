@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-/* Requisitos de Funções (Obrigatórios) */
 
 float calcular_media() {
     float p1, p2, lista;
@@ -50,11 +49,9 @@ int main() {
     float cr = soma_cr / 4.0f;
 
     if (todas_aprovadas) {
-        /* Cenário 1: Harry passou em tudo direto */
         printf("\nParabéns Harry, você passou! 100 pontos para a Grifinória!\n");
         printf("CR: %.2f\n", cr);
     } else {
-        /* Cenário 2: Harry ficou de recuperação em pelo menos uma matéria */
         printf("\nRecuperação:\n");
 
         float soma_novo_cr = 0.0f;

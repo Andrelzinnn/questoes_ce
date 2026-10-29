@@ -3,7 +3,7 @@
 int main() {
     int nota = -1;
     int total_participantes = 0;
-    int contagem[6] = {0}; // índices 1 a 5
+    int contagem[6] = {0};
 
     printf("--- Pesquisa de Satisfacao dos Clientes ---\n");
     printf("Digite notas de 1 a 5 (ou 0 para encerrar):\n");

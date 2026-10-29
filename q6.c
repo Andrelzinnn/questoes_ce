@@ -1,8 +1,6 @@
 #include <stdio.h>
 
-/* Requisitos de Funções */
 
-/* a) exibe_menu(): apresenta as opcoes, le a escolha e retorna o numero */
 int exibe_menu() {
     int opcao;
     printf("\n--- MENU ---\n");
@@ -17,7 +15,6 @@ int exibe_menu() {
     return opcao;
 }
 
-/* b) fazer_recarga(float saldo_atual) */
 float fazer_recarga(float saldo_atual) {
     float valor;
     printf("Informe o valor da recarga via Pix: R$ ");
@@ -33,7 +30,6 @@ float fazer_recarga(float saldo_atual) {
     return saldo_atual;
 }
 
-/* c) pagar_corrida(float saldo_atual) */
 float pagar_corrida(float saldo_atual) {
     float valor;
     printf("Informe o valor da corrida: R$ ");
@@ -58,7 +54,6 @@ int main() {
     float saldo = 0.0;
     int opcao = 0;
 
-    /* d) laco de repeticao em conjunto com switch-case */
     while (opcao != 4) {
         opcao = exibe_menu();
 

@@ -4,7 +4,6 @@
 int main() {
     int n;
 
-    /* I. Validar a entrada no intervalo de 0 a 100 */
     do {
         printf("Digite a quantidade de valores a inserir (0 a 100): ");
         if (scanf("%d", &n) != 1) {
@@ -20,7 +19,6 @@ int main() {
         return 0;
     }
 
-    /* II. Ler os valores e armazenar em um vetor */
     double vetor[100];
     double soma = 0.0;
 
@@ -31,7 +29,6 @@ int main() {
         soma += vetor[i];
     }
 
-    /* III. Determinar maior, menor, media e desvio padrao */
     double maior = vetor[0];
     double menor = vetor[0];
 
@@ -54,7 +51,6 @@ int main() {
 
     double desvio_padrao = sqrt(soma_quadrados / n);
 
-    /* Exibição dos resultados */
     printf("\n--- Resultados ---\n");
     printf("Maior elemento: %.2f\n", maior);
     printf("Menor elemento: %.2f\n", menor);

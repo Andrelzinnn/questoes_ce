@@ -5,7 +5,6 @@ int main() {
     int gabarito[5];
     int resultado[3] = {0};
 
-    /* ii. Ler o vetor de 5 posicoes contendo o gabarito oficial */
     printf("--- Gabarito Oficial ---\n");
     for (int j = 0; j < 5; j++) {
         do {
@@ -17,7 +16,6 @@ int main() {
         } while (gabarito[j] < 1 || gabarito[j] > 4);
     }
 
-    /* i. Ler a matriz 3x5 de respostas dos 3 alunos */
     printf("\n--- Respostas dos Alunos ---\n");
     for (int i = 0; i < 3; i++) {
         printf("\nAluno %d:\n", i + 1);
@@ -32,8 +30,6 @@ int main() {
         }
     }
 
-    /* iii. Comparar respostas com gabarito */
-    /* iv. Gerar vetor denominado resultado (pontuacao / acertos) */
     for (int i = 0; i < 3; i++) {
         resultado[i] = 0;
         for (int j = 0; j < 5; j++) {

@@ -9,7 +9,6 @@ int main() {
     int total_categoria[CATEGORIAS] = {0};
     int total_fornecedor[FORNECEDORES] = {0};
 
-    /* A) Leitura e armazenamento na matriz */
     printf("--- Cadastro de Estoque (4 Categorias x 5 Fornecedores) ---\n");
     for (int i = 0; i < CATEGORIAS; i++) {
         printf("\nCategoria %d:\n", i + 1);
@@ -24,7 +23,6 @@ int main() {
         }
     }
 
-    /* B) Calcule e mostre */
     printf("\n=== RELATORIO DE ESTOQUE ===\n");
     printf("Quantidade total de produtos em estoque: %d\n\n", total_geral);
 
@@ -38,7 +36,6 @@ int main() {
         printf("Fornecedor %d: %d unidades\n", j + 1, total_fornecedor[j]);
     }
 
-    /* C) Alerta para fornecedor com menos de 10 unidades no total */
     printf("\n--- Alertas de Reabastecimento ---\n");
     for (int j = 0; j < FORNECEDORES; j++) {
         if (total_fornecedor[j] < 10) {

@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-/* Funções Obrigatórias */
 
 /* 1. Função para calcular o fatorial */
 unsigned long long calcular_fatorial(int n) {
